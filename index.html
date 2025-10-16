@@ -5,7 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HNG Profile Card</title>
     <link rel="stylesheet" href="index.css" />
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
   </head>
-  <body></body>
+  <body>
+    <article data-testid="test-profile-card">
+      <div class="card-avatar">
+        <figure>
+          <a
+            href="https://i.postimg.cc/y8x2kNdn/150613620.jpg"
+            aria-label="profile image"
+          >
+            <img
+              data-testid="test-user-avatar"
+              src="./assets/profile-image.jpeg"
+              alt="Abdulrahaman Ridwan Photo https://postimg.cc/0zgV4P7J"
+              width="100%"
+            />
+          </a>
+        </figure>
+      </div>
+
+      <div class="card-info">
+        <header>
+          <h2 data-testid="test-user-name">Abdulrahaman Ridwan</h2>
+          <p data-testid="test-user-bio">
+            My name is Ridwan Abdulrahaman, a Biochemistry graduate, I have been
+            learning frontEnd development for about 2 years now and I hope to
+            level up with work experience
+          </p>
+
+          <p>
+            <span>Current Time in Milliseconds:</span
+            ><span id="time-display" data-testid="test-user-time"></span>
+          </p>
+        </header>
+
+        <ul class="socials" data-testid="test-user-social-links">
+          <li data-testid="test-user-social-twitter">
+            <a
+              href="https://x.com/eleniyancode"
+              target="_blank"
+              rel="noopener noreferrer"
+              arial-label="twitter-profile-link"
+              ><img src="./assets/icons8-twitter-30.png" alt="twitter icon" />
+            </a>
+          </li>
+          <li data-testid="test-user-social-facebook">
+            <a
+              href="https://web.facebook.com/abdulrahaman.readwan"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="facebook-profile-link"
+              ><img src="./assets/icons8-facebook-30.png" alt="facebook icon" />
+            </a>
+          </li>
+          <li data-testid="test-user-social-instagram">
+            <a
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="instagram-profile-link"
+              ><img src="./assets/icons8-instagram-30.png" alt="instagram icon"
+            /></a>
+          </li>
+          <li data-testid="test-user-social-github">
+            <a
+              href="https://github.com/Eleniyancode"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="github-profile-link"
+              ><img src="./assets/icons8-github-30.png" alt="gtihub icon" />
+            </a>
+          </li>
+        </ul>
+
+        <div class="sections">
+          <section data-testid="test-user-hobbies">
+            <h3>Hobbies</h3>
+            <ul>
+              <li>Reading and Researching</li>
+              <li>Playing Football</li>
+            </ul>
+          </section>
+
+          <section data-testid="test-user-dislikes">
+            <h3>Dislikes</h3>
+            <ul>
+              <li>Laziness</li>
+              <li>Dishonesty</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </article>
+  </body>
 </html>
