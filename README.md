@@ -23,10 +23,10 @@ HNG stage-0 first task, a testable profile card, build to be responsive and acce
 Follow these steps to run the project locally on your computer 👇
 
 ### 1. Clone the repository
-```bash https://github.com/Eleniyancode/hng-testable-profile-card.git
+```bash https://github.com/Eleniyancode/hng-testable-profile-card.git bash```
 
 ### 2. Navigate to the project folder
-```bash cd your-repo-name
+```bash cd your-repo-name bash```
 
 ### 3. Open the project
 Since this is a static project (no backend), simply open the index.html file in your browser
