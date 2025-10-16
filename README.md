@@ -2,7 +2,7 @@
 HNG stage-0 first task, a testable profile card, build to be responsive and accessible with plain HTML/CSS/Vanilla JS
 ---
 ## 🚀 Demo
-[Live Demo] ()
+[Live Demo] (https://hng-testable-profile-card.vercel.app/)
 ---
 ## 🧠 Features
 - Responsive Design
@@ -42,7 +42,7 @@ Since this is a static project (no backend), simply open the index.html file in 
 
 ## 🙌 Author
 Ridwan Abdulrahaman
-- Github: @
+- Github: @ https://github.com/Eleniyancode
 - Twitter: @  https://x.com/eleniyancode
  ```bash 
 
