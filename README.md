@@ -44,5 +44,7 @@ Since this is a static project (no backend), simply open the index.html file in 
 Ridwan Abdulrahaman
 - Github: @ https://github.com/Eleniyancode
 - Twitter: @  https://x.com/eleniyancode
- ```bash 
+
+## 📝 License
+This project is licensed under the MIT License - feel free to use and modify it.
 
