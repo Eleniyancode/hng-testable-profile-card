@@ -7,6 +7,12 @@ html {
   font-size: 62.5%;
 }
 
+.ubuntu {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
 body {
   padding: 2rem;
   display: flex;
@@ -34,14 +40,13 @@ div.card-info h2 {
 }
 
 div.card-info p {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-block: 1rem;
 }
 
 .socials {
   display: flex;
   gap: 2rem;
-  font-size: 1.4rem;
 }
 
 .socials li {
@@ -89,7 +94,7 @@ section h3 {
 
 section ul li {
   list-style: none;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 div.sections {
