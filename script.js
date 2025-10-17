@@ -1,7 +1,11 @@
 const timeElement = document.getElementById("time-display");
 console.log(timeElement);
 
-const currentTime = Date.now();
-console.log(currentTime);
+function displayTime() {
+  setInterval(() => {
+    const currentTime = Date.now();
+    timeElement.textContent = `${currentTime}s`;
+  }, 1000);
+}
 
-timeElement.textContent = `${currentTime}s`;
+displayTime();
