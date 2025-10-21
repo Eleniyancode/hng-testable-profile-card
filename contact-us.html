@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="index.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body style="background-color: black">
+    <main style="background-color: white">
+      <h2 class="contact-us-h2">Contact Us</h2>
+      <form id="form" novalidate>
+        <label for="fullname">
+          Full Name:
+          <span
+            data-testid="test-contact-error-name"
+            class="error-name-message error"
+            aria-live="polite"
+          ></span>
+          <input
+            data-testid="data-test-contact-name"
+            type="text"
+            name="fullname"
+            id="fullname"
+            aria-required="true"
+          />
+        </label>
+        <label for="email">
+          Email:
+          <span
+            data-testid="test-contact-error-email"
+            class="error-email-message error"
+            aria-live="polite"
+            id="email-error"
+          ></span>
+          <input
+            data-testid="data-test-contact-email"
+            type="email"
+            id="email"
+            placeholder="example@email.com"
+            aria-required="true"
+          />
+        </label>
+        <label for="subject">
+          Subject:
+          <span
+            data-testid="test-contact-error-subject"
+            class="error-subject-message error"
+            aria-live="polite"
+          ></span>
+          <input
+            data-testid="data-test-contact-subject"
+            type="text"
+            name="subject"
+            id="subject"
+            aria-required="true"
+          />
+        </label>
+        <label for="message">
+          Message:
+          <span
+            data-testid="test-contact-error-message"
+            class="error-message-message error"
+            aria-live="polite"
+          ></span>
+          <textarea
+            data-testid="data-test-contact-message"
+            id="message"
+            placeholder="Leave us a message..."
+            aria-required="true"
+          ></textarea>
+        </label>
+      </form>
+      <div
+        class="button-div"
+        style="display: flex; justify-content: space-between; padding: 1rem"
+      >
+        <button><a href="./index.html">Back home</a></button>
+        <button data-testid="test-contact-submit" type="submit" form="form">
+          Sumbit
+        </button>
+      </div>
+    </main>
+
+    <section class="modal-section">
+      <div class="overlay" id="overlay"></div>
+      <div class="modal" id="successModal">
+        <h3>Thank You!</h3>
+        <p>Your message has been successfully submitted.</p>
+        <button class="close-btn" id="closeModal">Close</button>
+      </div>
+    </section>
+  </body>
+</html>
