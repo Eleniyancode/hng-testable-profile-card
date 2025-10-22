@@ -13,6 +13,14 @@ html {
   font-style: normal;
 }
 
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
 body {
   padding: 2rem;
 }
@@ -286,6 +294,7 @@ main h1 {
 .thought-section p {
   text-align: justify;
   margin-top: 1rem;
+  line-height: 1.4;
 }
 
 @media (min-width: 768px) {
