@@ -91,6 +91,11 @@ div.card-info p {
   cursor: pointer;
 }
 
+.card-avatar img:hover {
+  border: 2px solid burlywood;
+  border-radius: 100%;
+}
+
 section h3 {
   font-size: 2.4rem;
 }
@@ -105,29 +110,6 @@ div.sections {
   flex-direction: row;
   padding: 3rem;
   gap: 2rem;
-}
-
-@media (min-width: 768px) {
-  body {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  article {
-    width: 60rem;
-    flex-direction: row;
-  }
-
-  main {
-    width: 60rem;
-    padding: 2rem;
-  }
-
-  div.sections {
-    flex-direction: row;
-    gap: 4rem;
-  }
 }
 
 /* Form style - contact us page */
@@ -150,7 +132,7 @@ main {
 }
 
 .contact-us-h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   margin-block: 1rem;
   padding-inline: 1rem;
   text-align: center;
@@ -160,13 +142,14 @@ label {
   display: flex;
   flex-direction: column;
   /* gap: 1.5rem; */
-  font-size: 1.4rem;
+  font-size: 1.8rem;
 }
 
 label input {
-  padding: 1rem;
+  padding: 1.5rem;
   appearance: none;
   border: 1px solid #333333;
+  font-size: 1.6rem;
 }
 
 .valid {
@@ -194,11 +177,14 @@ textarea:focus {
 
 textarea {
   height: 10rem;
-  padding: 1rem;
+  padding: 1.5rem;
+  font-size: 1.6rem;
 }
 
 button {
-  padding: 1rem;
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  font-size: 1.6rem;
   outline: none;
   border: 0px;
 }
@@ -278,4 +264,50 @@ button a {
 
 .close-btn:hover {
   background: #0056b3;
+}
+
+/* About Me page styles */
+main h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-block: 1rem;
+}
+.bio-section,
+.confidence-section,
+.note-section,
+.thought-section {
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+}
+
+.bio-section p,
+.confidence-section ul,
+.note-section p,
+.thought-section p {
+  text-align: justify;
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  body {
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+  }
+  article {
+    width: 60rem;
+    flex-direction: row;
+  }
+
+  main {
+    width: 60rem;
+    padding: 2rem;
+  }
+
+  div.sections {
+    flex-direction: row;
+    gap: 4rem;
+  }
 }

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="index.css" />
     <script defer src="script.js"></script>
   </head>
-  <body style="background-color: black">
+  <body style="background-color: black" class="ubuntu">
     <main style="background-color: white">
       <h2 class="contact-us-h2">Contact Us</h2>
       <form id="form" novalidate>
@@ -16,9 +16,11 @@
           <span
             data-testid="test-contact-error-name"
             class="error-name-message error"
+            id="error-name-message"
             aria-live="polite"
           ></span>
           <input
+            aria-describedby="error-name-message"
             data-testid="data-test-contact-name"
             type="text"
             name="fullname"
@@ -40,6 +42,7 @@
             id="email"
             placeholder="example@email.com"
             aria-required="true"
+            aria-describedby="email-error"
           />
         </label>
         <label for="subject">
@@ -48,6 +51,7 @@
             data-testid="test-contact-error-subject"
             class="error-subject-message error"
             aria-live="polite"
+            id="error-subject-message"
           ></span>
           <input
             data-testid="data-test-contact-subject"
@@ -55,6 +59,7 @@
             name="subject"
             id="subject"
             aria-required="true"
+            aria-describedby="error-subject-message"
           />
         </label>
         <label for="message">
@@ -63,12 +68,14 @@
             data-testid="test-contact-error-message"
             class="error-message-message error"
             aria-live="polite"
+            id="error-message-message"
           ></span>
           <textarea
             data-testid="data-test-contact-message"
             id="message"
             placeholder="Leave us a message..."
             aria-required="true"
+            aria-describedby="error-message-message"
           ></textarea>
         </label>
       </form>
@@ -76,7 +83,7 @@
         class="button-div"
         style="display: flex; justify-content: space-between; padding: 1rem"
       >
-        <button><a href="./index.html">Back home</a></button>
+        <button><a href="./index.html">Go Back</a></button>
         <button data-testid="test-contact-submit" type="submit" form="form">
           Sumbit
         </button>
